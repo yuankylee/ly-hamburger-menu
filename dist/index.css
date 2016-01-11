@@ -1,0 +1,32 @@
+.close {
+  margin: 10px;
+  display: inline-block;
+  float: right;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  color: #fff;
+  z-index: 500;
+  background: #222;
+  transition: .5s;
+}
+.sidebar a,
+.sidebar a:hover {
+  color: white;
+}
+.sidebar.visible {
+  left: 0;
+}
+@media (min-width: 768px) {
+  .close,
+  .open {
+    display: none;
+  }
+  .sidebar {
+    left: 0;
+  }
+}
