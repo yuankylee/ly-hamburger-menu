@@ -1,26 +1,50 @@
-.close {
+a,
+a:hover {
+  color: #000000;
+}
+
+ul {
+  margin: 0;
+  padding-top: 10px;
+  display: block;
+}
+
+ul li {
+  display: block;
   margin: 10px;
+}
+
+ul li > a {
+  display: block;
+}
+
+.close {
   display: inline-block;
   float: right;
+  margin: 10px;
 }
+
 .sidebar {
   position: fixed;
-  top: 0;
-  left: -300px;
+  color: #ffffff;
   width: 300px;
   height: 100%;
-  color: #fff;
+  top: 0;
+  left: -300px;
   z-index: 500;
-  background: #222;
+  background: #4a5a5a;
   transition: .5s;
 }
+
 .sidebar a,
 .sidebar a:hover {
-  color: white;
+  color: #ffffff;
 }
+
 .sidebar.visible {
   left: 0;
 }
+
 @media (min-width: 768px) {
   .close,
   .open {
